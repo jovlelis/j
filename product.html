@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>3J's Care Pharmacy</title>
+
+    <link rel="stylesheet" href="style/gen.css">
+    <link rel="stylesheet" href="style/product.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        $('header').load("head.html");
+        $('footer').load("footer.html");
+        
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    
+
+    <div id="cart-pic"><img class="cart-pic" src="icons/shop.png"></div>
+
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+
+      <div class="cart-content">
+          
+          <div class="cart-box">
+              <img src="images/images/biogesic.png" alt="" class="cart-img">
+              <div class="detail-box">
+                  <div class="cart-product-title">Biogesic</div>
+                  <div class="cart-price"><span>₱</span> 1.00</div>
+                  <input type="number" value="1" class="cart-quantity">
+              </div>
+
+              <i class="fas fa-trash cart-remove"></i>
+
+          </div>
+      </div>
+      <div class="total">
+          <div class="total-title">total</div>
+          <div class="total-price">₱ 0</div>
+      </div>
+      
+      <button type="button" class="btn-checkout appointmen-btn">Checkout <span></span></button>
+      <i class="fas fa-x" id="close-cart"></i>
+
+    </div>
+
+    <section class="product">
+      <div class="contact-bg">
+        <h3>Secure your health</h3>
+        <h2>Products</h2>
+        <div class="line">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class="par"> All trusted products and affordable</p>
+      </div>
+      <div class="featured">
+        <h2>Featured Products</h2>
+        <div class="shop">
+          <div class="tabContainer">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'transparent')">All</button>
+                <button onclick="showPanel(1,'transparent')">Medical Equipment</button>
+                <button onclick="showPanel(2,'transparent')">Medicine & Health</button>
+                <button onclick="showPanel(3,'transparent')">Personal Care</button>
+                <button onclick="showPanel(4,'transparent')">Baby Care</button>
+            </div>
+            <div class="tabPanel">
+              <div class="product-list">
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/biogesic.png" alt="">
+                  </div>
+                  <div>
+                    <h2>Biogesic</h2>
+                    <p> <span>₱</span> 1.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  </div>
+                </div>
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/alcohol.png" alt="">
+                  </div>
+                  <div>
+                    <h2>Alcohol</h2>
+                    <p> <span>₱</span> 2.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  
+                  </div>
+                </div>
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/gloves.webp" alt="">
+                  </div>
+                  <div>
+                    <h2> Gloves</h2>
+                    <p> <span>₱</span> 3.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  </div>
+                </div>
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/mask.png" alt="">
+                  </div>
+                  <div>
+                    <h2> mask</h2>
+                    <p> <span>₱</span> 4.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  </div>
+                </div>
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/thermometer.jpg" alt="">
+                  </div>
+                  <div>
+                    <h2>thermometer</h2>
+                    <p> <span>₱</span> 5.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  </div>
+                </div>
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/mask.png" alt="">
+                  </div>
+                  <div>
+                    <h2> mask</h2>
+                    <p> <span>₱</span> 4.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  </div>
+                </div>
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/gloves.webp" alt="">
+                  </div>
+                  <div>
+                    <h2> Gloves</h2>
+                    <p> <span>₱</span> 3.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  </div>
+                </div>
+                <div class="prod-box">
+                  <div>
+                    <img src="images/images/biogesic.png" alt="">
+                  </div>
+                  <div>
+                    <h2>Biogesic</h2>
+                    <p> <span>₱</span> 1.00</p>
+                    <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="tabPanel"><div class="product-list">
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/thermometer.jpg" alt="">
+                </div>
+                <div>
+                  <h2>thermometer</h2>
+                  <p> <span>₱</span> 5.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/alcohol.png" alt="">
+                </div>
+                <div>
+                  <h2>Alcohol</h2>
+                  <p> <span>₱</span> 2.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="tabPanel"><div class="product-list">
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/alcohol.png" alt="">
+                </div>
+                <div>
+                  <h2>Alcohol</h2>
+                  <p> <span>₱</span> 2.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/thermometer.jpg" alt="">
+                </div>
+                <div>
+                  <h2>thermometer</h2>
+                  <p> <span>₱</span> 5.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+            </div></div>
+            <div class="tabPanel"><div class="product-list">
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/thermometer.jpg" alt="">
+                </div>
+                <div>
+                  <h2>thermometer</h2>
+                  <p> <span>₱</span> 5.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/alcohol.png" alt="">
+                </div>
+                <div>
+                  <h2>Alcohol</h2>
+                  <p> <span>₱</span> 2.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+            </div></div>
+            <div class="tabPanel"><div class="product-list">
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/alcohol.png" alt="">
+                </div>
+                <div>
+                  <h2>Alcohol</h2>
+                  <p> <span>₱</span> 2.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/thermometer.jpg" alt="">
+                </div>
+                <div>
+                  <h2>thermometer</h2>
+                  <p> <span>₱</span> 5.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/mask.png" alt="">
+                </div>
+                <div>
+                  <h2> mask</h2>
+                  <p> <span>₱</span> 4.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/gloves.webp" alt="">
+                </div>
+                <div>
+                  <h2> Gloves</h2>
+                  <p> <span>₱</span> 3.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+              <div class="prod-box">
+                <div>
+                  <img src="images/images/biogesic.png" alt="">
+                </div>
+                <div>
+                  <h2>Biogesic</h2>
+                  <p> <span>₱</span> 1.00</p>
+                  <button class="appointmen-btn"><i class="fas fa-cart-shopping"></i> <input type="submit" class="send-btn" value="Add to cart"><span></span></button>
+                </div>
+              </div>
+            </div></div>
+        </div>
+      </div>
+        
+      </div>
+      
+
+    </section>
+    <footer><footer>
+      <script>
+        var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
+        var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+
+        function showPanel(panelIndex,colorCode) {
+            tabButtons.forEach(function(node){
+                node.style.backgroundColor="";
+                node.style.color="";
+                node.style.fontSize="";
+            });
+            tabButtons[panelIndex].style.backgroundColor=colorCode;
+            tabButtons[panelIndex].style.color="white";
+            tabButtons[panelIndex].style.fontSize="1.5rem";
+            tabPanels.forEach(function(node){
+                node.style.display="none";
+            });
+            tabPanels[panelIndex].style.display="block";
+            tabPanels[panelIndex].style.backgroundColor=colorCode;
+        }
+        showPanel(0,'transparent');
+      </script>
+
+      <script src="js/script.js"></script>
+  </body>
+</html>
